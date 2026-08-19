@@ -1,72 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <title>ejercicio 2</title>
+        <title>Parcial 01</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="Parcial01.css">
     </head>
     <body>
-        <div>
-            <h1>Andrea Sofía Miranda Abrego</h1>
-            <h2>1065824</h2>
-            <h3>Soy Andrea Miranda, nací el 25 de mayo del 2006 así que tengo 20 años. Soy de nacionalidad salvadoreña pero llevo estudiando en Guatemala toda mi vida. Estudio ingeniería en informática y sistemas.</h3>
-            <h3>En cuanto a mis intereses, me apasiona el arte, especialmente el dibujo, la animación y el cine desde un aspecto técnico y narrativo. De igual manera disfruto de la escritura de personajes e historias aunque sea desde un nivel principiante.</h3>
+        <div class="contenedor">
+            <h1>registro de empleados</h1>
+            <div>
+                <label>Ingresar NIT: </label>
+                <input type="text" id="nit" name="nit">
+                <span id="nitError" style="color: #ff0000;"></span>
+                <br>
+
+                <label>Ingresar su nombre y apellido: </label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="nombreError" style="color:#ff0000;"></span>
+                <br>
+
+                <label>Ingresar su fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
+                <span id="fechaError" style="color:#ff0000;"></span>
+                <br>
+
+                <label>Ingrese su ocupacion: </label>
+                <input type="text" id="ocupacion" name="ocupacion">
+                <span id="ocupacionError" style="color:#ff0000;"></span>
+                <br>
+                <button type="button" onclick="agregar()">AGREGAR A LA LISTA</button>
+                <span id="agregarExito" style="color: #09cb12;"></span>
+
+            </div>
+            <div>
+                <h2>Lista de empleados: </h2>
+                <ul id="empleadosLista"></ul>
+            </div>
         </div>
-        <div>
-            <h2>Imagenes:</h2>
-            <img src="deltarune1.png">
-            <h4>un buen juego</h4>
-        </div>
-        <div>
-            <h2>Enlaces:</h2>
-            <ul>
-                <li>
-                    <a href="https://principal.url.edu.gt/">Universidad Rafael landivar</a>
-                </li>
-                <li>
-                    <a href="https://neocities.org/">neocities</a>
-                </li>
-                <li>
-                    <a href="https://deltarune.com/">Deltarune</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2>Mis habilidades y pasatiempos</h2>
-            <ul>
-                <li>
-                    <h3>Dibujar</h3>
-                </li>
-                <li>
-                    <h3>Animar</h3>
-                </li>
-                <li>
-                    <h3>Escribir</h3>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2>Cursos que llevo en el semestre</h2>
-            <table border="1">
-                <tr>
-                    <td>Número</td>
-                    <td>Curso</td>
-                </tr>   
-                <tr>
-                    <td>1</td>
-                    <td>Bases de datos II</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Arquitectura del computador</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Programación web</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            
-        </div>
+        <script src="Parcial01.js"></script>
     </body>
 </html>
