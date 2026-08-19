@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parcial 01</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="Parcial01.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1>registro de empleados</h1>
+            <div>
+                <label>Ingresar NIT: </label>
+                <input type="text" id="nit" name="nit">
+                <span id="nitError" style="color: #ff0000;"></span>
+                <br>
+
+                <label>Ingresar su nombre y apellido: </label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="nombreError" style="color:#ff0000;"></span>
+                <br>
+
+                <label>Ingresar su fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
+                <span id="fechaError" style="color:#ff0000;"></span>
+                <br>
+
+                <label>Ingrese su ocupacion: </label>
+                <input type="text" id="ocupacion" name="ocupacion">
+                <span id="ocupacionError" style="color:#ff0000;"></span>
+                <br>
+                <button type="button" onclick="agregar()">AGREGAR A LA LISTA</button>
+                <span id="agregarExito" style="color: #09cb12;"></span>
+
+            </div>
+            <div>
+                <h2>Lista de empleados: </h2>
+                <ul id="empleadosLista"></ul>
+            </div>
+        </div>
+        <script src="Parcial01.js"></script>
+    </body>
+</html>
